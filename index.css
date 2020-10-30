@@ -335,6 +335,14 @@ li a {
         width: unset;
         font-size: 1.15rem;
     }
+
+    .slider-component {
+        overflow: unset;
+    }
+
+    .d-flex.slider-component img {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 1024px) {
