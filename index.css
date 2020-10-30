@@ -313,3 +313,135 @@ li a {
 .blue {
     color: var(--font-color-blue);
 }
+
+/*-----------*/
+/*-----------*/
+/*-----------*/
+/*-----------*/
+/*MEDIA QUERIES */
+@media (min-width: 580px) {
+    .d-flex.slider-component {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px) {
+    .block-heading {
+        text-align: left;
+        font-size: 1.25rem;
+    }
+
+    .testimonial-content {
+        width: unset;
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding-top: 0;
+    }
+
+    .block-heading:after, .block-heading::before {
+        display: none;
+    }
+
+    .content-wrapper {
+       margin-top: 3rem;
+        width: 100%;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .header-content h1 {
+        font-size: 2.15rem;
+        line-height: 2.5rem;
+    }
+
+    .header-image {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .section-heading {
+        width: 100%;
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .mb-text-c {
+        text-align: center;
+    }
+
+    .testimonial-content img {
+        display: none;
+    }
+
+    .testimonial-next {
+        right: -15px;
+    }
+
+    .testimonial-prev {
+        left: -15px;
+    }
+
+    .navigation {
+        width: unset;
+    }
+
+    article .m-left {
+        margin-left: 0;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation-content {
+        width: unset;
+    }
+
+    section h3.m-top {
+        margin-top: 3rem;
+    }
+
+    .faq-heading {
+        margin-top: 0;
+    }
+
+    .collapsible-container {
+        margin-left: 0;
+        width: unset;
+    }
+
+    .collapsible-button {
+        align-items: flex-start;
+    }
+
+    .slider-component {
+        box-shadow: -15px 61px 0 var(--box-shadow-colour);
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .d-flex.tablet-only {
+        flex-direction: row;
+    }
+
+    .navigation-content {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .block-heading:after, .block-heading::before {
+        width: 15%;
+    }
+
+    .content-wrapper {
+        width: 95%;
+    }
+}
