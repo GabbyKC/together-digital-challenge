@@ -1,17 +1,16 @@
-/*fonts*/
+/*FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
 
-/*resets*/
+/*RESETS*/
 * {
     box-sizing: border-box;
 }
 
-/*variables */
+/*COLOURS */
 :root {
-    --heading-line-colour: #C6C6C6;
-    --heading-font-colour: #2C2C2C;
+    --block-heading-line: #C6C6C6;
     --font-colour-light: #858789;
-    --font-colour-black: #232323;
+    --font-colour-dark: #232323;
     --font-colour-orange: #F56600;
     --font-colour-purple: #510D76;
     --font-color-blue: #08ADF5;
@@ -23,7 +22,7 @@
     --box-shadow-colour: #F4F6F8;
 }
 
-/*general */
+/*GENERAL */
 body {
     font-family: 'Poppins', sans-serif;
     padding: 2rem 2rem 0;
@@ -31,52 +30,26 @@ body {
     margin: auto;
 }
 
-/*sections*/
-.section-heading {
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.5rem;
-    position: relative;
-}
-
-.section-heading::before, .section-heading::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 30%;
-    background: var(--heading-line-colour);
-    top: 1.2rem;
-    color: var(--heading-font-colour);
-}
-
-.section-heading::before {
-    left: 0;
-}
-
-.section-heading::after {
-    right: 0;
-}
-
-/*elements*/
-.first-block-content {
+/*STYLES */
+.header-content {
     align-self: center;
 }
 
-.first-block-content h1 {
+.header-content h1 {
     font-size: 2.45rem;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0;
-    color: var(--font-colour-black);
+    color: var(--font-colour-dark);
 }
 
-.first-block-content p {
+.header-content p {
     color: var(--font-colour-light);
     font-size: 1.15rem;
     line-height: 2rem;
 }
 
-.first-block-cta {
+.header-cta {
     text-transform: uppercase;
     color: white;
     background: var(--button-cta-bg);
@@ -87,76 +60,123 @@ body {
     font-size: 1.01rem;
 }
 
-.first-block-image {
+.header-image {
     width: 40%;
     margin-left: 5%;
 }
 
-.second-block-heading {
+.section-heading {
     font-size: 1.9rem;
-    color: var(--font-colour-black);
+    color: var(--font-colour-dark);
     font-weight: 600;
     width: 75%;
     margin-bottom: 4rem;
 }
 
+/*Testimonials sections*/
+.testimonials-container {
+    position: relative;
+}
 
+.testimonial-content {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.45rem;
+}
+
+.testimonial-steps {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.testimonial-step {
+    cursor: pointer;
+    height: 3px;
+    width: 15px;
+    background: var(--step-bg-colour);
+    display: inline-block;
+}
+
+.testimonial-next, .testimonial-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+
+.testimonial-prev  {
+    left: 0;
+}
+
+.testimonial-next {
+    right: 0;
+}
+
+/*navigation & content */
 .navigation {
     width: 50%;
     margin: 0 auto 2.5rem;
-    display: flex;
-    justify-content: space-evenly;
 }
 
-.navigation a {
+.navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    list-style: none;
+}
+
+li a {
     text-decoration: none;
     font-size: 1.5rem;
     color: var(--font-colour-light);
 }
 
-.navigation a:first-of-type {
+.current {
     text-decoration: underline;
     text-underline-position: under;
-    color: var(--font-colour-black);
+    color: var(--font-colour-dark);
 }
 
-.navigation-items {
+.navigation-content {
     width: 30%;
 }
 
-.navigation-items img {
+.navigation-content img {
     max-width: 100%;
 }
 
-.navigation-items__title {
+.navigation-content__title {
     text-transform: uppercase;
     font-size: .9rem;
     font-weight: 600;
     margin-bottom: 0;
 }
 
-.navigation-items__desc {
+.navigation-content__desc {
     margin-top: .5rem;
     font-weight: 600;
     font-size: 1.15rem;
 }
 
-.navigation-items__desc--underline {
+.navigation-content__desc--underline {
     text-decoration: underline;
     text-underline-position: under;
 }
 
-.navigation-items__date {
+.navigation-content__date {
     font-size: .9rem;
     color: var(--font-colour-light);
 }
 
-.faq-title {
+/*faq*/
+.faq-heading {
     font-size: 1.75rem;
     margin-top: 2rem;
     margin-bottom: 0;
 }
 
+/*faq collapse component */
 .collapsible-container {
     margin-left: 5%;
     flex-shrink: 0;
@@ -191,63 +211,12 @@ body {
     margin-bottom: 0;
 }
 
-.inline-link a {
-    color: var(--button-cta-bg);
-}
-
-.sixth-block-heading {
+/*footer*/
+.footer-heading {
     font-size: 2rem;
 }
 
-
-
-/*slider */
-.slider-container {
-    position: relative;
-}
-
-.slider-content {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    line-height: 2.5rem;
-    font-size: 1.45rem;
-}
-
-.slider-steps {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.slider-step {
-    cursor: pointer;
-    height: 3px;
-    width: 15px;
-    background: var(--step-bg-colour);
-    display: inline-block;
-}
-
-.next, .prev {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-}
-
-.prev  {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.active {
-    background: var(--step-active-colour);
-}
-
-
-
-
+/* footer slider component*/
 .slider-component {
     overflow: scroll;
     box-shadow: -85px 61px 0 var(--box-shadow-colour) ;
@@ -265,23 +234,48 @@ body {
     font-size: 1.15rem;
 }
 
+/*-----------*/
+/*-----------*/
+/*-----------*/
+/*-----------*/
+/*UTILITIES */
+.block-heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: relative;
+}
 
+.block-heading::before, .block-heading::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 30%;
+    background: var(--block-heading-line);
+    top: 1.2rem;
+    color: var(--block-heading-line);
+}
 
+.block-heading::before {
+    left: 0;
+}
 
+.block-heading::after {
+    right: 0;
+}
 
-
-
-
-
-
-/*utilities */
 .content-wrapper {
     width: 80%;
     margin: 8rem auto 0;
 }
 
-.flex-container {
+.d-flex {
     display: flex;
+}
+
+.basic-icon {
+    background: var(--basic-icon-bg);
+    padding: .75rem;
 }
 
 .m-left {
@@ -292,9 +286,12 @@ body {
     margin-top: 8rem;
 }
 
-.basic-icons {
-    background: var(--basic-icon-bg);
-    padding: .75rem;
+.active {
+    background: var(--step-active-colour);
+}
+
+.inline-link a {
+    color: var(--button-cta-bg);
 }
 
 .bold {
@@ -316,10 +313,3 @@ body {
 .blue {
     color: var(--font-color-blue);
 }
-
-
-
-
-
-
-

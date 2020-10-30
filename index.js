@@ -1,36 +1,36 @@
-// slider component
-let slideIndex = 1;
-showSlides(slideIndex);
+// testimonial component
+let testimonialIndex = 1;
+showTestimonials(testimonialIndex);
 
-function plusSlides(num) {
-    showSlides(slideIndex += num);
+function plusTestimonials(num) {
+    showTestimonials(testimonialIndex += num);
 }
 
-function showSlides(num) {
+function showTestimonials(num) {
     let i;
-    let slides = document.getElementsByClassName('quoteSlides');
-    let steps = document.getElementsByClassName('slider-step');
+    let testimonials = document.getElementsByClassName('js-testimonial-slides');
+    let steps = document.getElementsByClassName('testimonial-step');
 
-    if (num > slides.length) {
-        slideIndex = 1
+    if (num > testimonials.length) {
+        testimonialIndex = 1
     }
 
     if (num < 1) {
-        slideIndex = slides.length
+        testimonialIndex = testimonials.length
     }
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
+    for (i = 0; i < testimonials.length; i++) {
+        testimonials[i].style.display = 'none';
     }
 
     for (i = 0; i < steps.length; i++) {
         steps[i].className = steps[i].className.replace(' active', '');
     }
-    slides[slideIndex - 1].style.display = 'block';
-    steps[slideIndex - 1].className += ' active ';
+    testimonials[testimonialIndex - 1].style.display = 'block';
+    steps[testimonialIndex - 1].className += ' active ';
 }
 
-// collapse component
+// faq collapse component
 let collapse = document.getElementsByClassName('collapsible-button');
 let i;
 

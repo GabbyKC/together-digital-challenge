@@ -8,27 +8,27 @@
     <title>Together Digital | GabbyKC</title>
 </head>
 <body>
-
-<section>
-    <h3 class="section-heading">Section #1 Basic - Font-Family: 'Poppins'</h3>
-    <div class="content-wrapper flex-container">
-        <div class="first-block-content">
+<header>
+    <h3 class="block-heading">Section #1 Basic - Font-Family: 'Poppins'</h3>
+    <div class="content-wrapper d-flex">
+        <div class="header-content">
             <h1>Dignissim neque aliquet roin sed turpis et purus</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque ducimus est, harum
                 officia rerum.</p>
-            <button class="first-block-cta">Find out more</button>
+            <button class="header-cta">Find out more</button>
         </div>
-        <img class="first-block-image" src="assets/img/image-01.png" alt="first block stock image">
+        <img class="header-image" src="assets/img/image-01.png" alt="header stock-image">
     </div>
-</section>
+</header>
+
 
 <section class="content-wrapper">
-    <h2 class="second-block-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam
+    <h2 class="section-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam
         assumenda corporis dicta eveniet id.</h2>
 
-    <div class="flex-container">
+    <article class="d-flex">
         <div>
-            <img class="basic-icons" src="assets/img/icon-01.svg" alt="chair icon">
+            <img class="basic-icon" src="assets/img/icon-01.svg" alt="chair icon">
             <p class="bold">High-quality, cost-effective courses</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugiat iure minus mollitia placeat,
                 reiciendis similique.</p>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="m-left">
-            <img class="basic-icons" src="assets/img/icon-02.svg" alt="building icon">
+            <img class="basic-icon" src="assets/img/icon-02.svg" alt="building icon">
             <p class="bold">Highly Experienced, Qualified Lecturers</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur error esse expedita
                 impedit mollitia.</p>
@@ -44,109 +44,114 @@
         </div>
 
         <div class="m-left">
-            <img class="basic-icons" src="assets/img/icon-03.svg" alt="laptop icon">
+            <img class="basic-icon" src="assets/img/icon-03.svg" alt="laptop icon">
             <p class="bold">Easy-to-use online student portal</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, magni sed! Aperiam corporis
                 delectus dolore.</p>
         </div>
-    </div>
+    </article>
 </section>
 
 
 <section>
-    <h3 class="section-heading m-top">Section #2 Advanced - Font-Family: 'Poppins'</h3>
-    <div class="content-wrapper slider-container">
-        <div class="quoteSlides">
-            <div class="slider-content">
+    <h3 class="block-heading m-top">Section #2 Advanced - Font-Family: 'Poppins'</h3>
+    <div class="content-wrapper testimonials-container">
+        <div class="js-testimonial-slides">
+            <div class="testimonial-content">
                 <img src="assets/img/quotes.svg" alt="quote icon">
                 <p>"Quote 1 lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae cum deserunt dolore eius
                     harum ipsam"</p>
             </div>
         </div>
 
-        <div class="quoteSlides">
-            <div class="slider-content">
+        <div class="js-testimonial-slides">
+            <div class="testimonial-content">
                 <img src="assets/img/quotes.svg" alt="quote icon">
                 <p>"Quote 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, distinctio harum!
                     Accusantium ad"</p>
             </div>
         </div>
 
-        <div class="quoteSlides">
-            <div class="slider-content">
+        <div class="js-testimonial-slides">
+            <div class="testimonial-content">
                 <img src="assets/img/quotes.svg" alt="quote icon">
                 <p>"Quote 3 lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae cum deserunt dolore eius
                     harum ipsam"</p>
             </div>
         </div>
 
-        <div class="quoteSlides">
-            <div class="slider-content">
+        <div class="js-testimonial-slides">
+            <div class="testimonial-content">
                 <img src="assets/img/quotes.svg" alt="quote icon">
                 <p>"Quote 4 lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae cum deserunt dolore eius
                     harum ipsam itaque"</p>
             </div>
         </div>
 
-        <img onclick="plusSlides(-1)" class="prev" src="assets/img/arrow-02.svg" alt="arrow-left">
-        <img onclick="plusSlides(1)" class="next" src="assets/img/arrow-01.svg" alt="arrow-right">
+        <img onclick="plusTestimonials(-1)" class="testimonial-prev" src="assets/img/arrow-02.svg" alt="arrow-left">
+        <img onclick="plusTestimonials(1)" class="testimonial-next" src="assets/img/arrow-01.svg" alt="arrow-right">
     </div>
 
-    <div class="slider-steps">
-        <span class="slider-step"></span>
-        <span class="slider-step"></span>
-        <span class="slider-step"></span>
-        <span class="slider-step"></span>
+    <div class="testimonial-steps">
+        <span class="testimonial-step"></span>
+        <span class="testimonial-step"></span>
+        <span class="testimonial-step"></span>
+        <span class="testimonial-step"></span>
     </div>
 </section>
 
 <section class="content-wrapper">
-    <div class="navigation">
-        <a href="#">All</a>
-        <a href="#">News</a>
-        <a href="#">Insights</a>
-        <a href="#">Events</a>
-        <a href="#">Resources</a>
-    </div>
+    <nav class="navigation">
+        <ul>
+            <li><a class="current" href="#">All</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Insights</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
 
-    <div class="flex-container justify-content">
-        <div class="navigation-items">
-            <img src="assets/img/image-02.png" alt="">
-            <p class="navigation-items__title orange">Insights</p>
-            <p class="navigation-items__desc">Aliquam convalis iaculis et sodales non justo.</p>
-            <p class="navigation-items__date">Jan 01, 2020 - Robert O'Malley</p>
+    <div class="d-flex justify-content">
+        <div class="navigation-content">
+            <img src="assets/img/image-02.png" alt="insights stock-image">
+            <p class="navigation-content__title orange">Insights</p>
+            <p class="navigation-content__desc">Aliquam convalis iaculis et sodales non justo.</p>
+            <p class="navigation-content__date">Jan 01, 2020 - Robert O'Malley</p>
         </div>
 
-        <div class="navigation-items">
-            <img src="assets/img/image-03.png" alt="">
-            <p class="navigation-items__title purple">News</p>
-            <p class="navigation-items__desc navigation-items__desc--underline">Orem ipsum dolor sit amet, consectturu adipsicing.</p>
-            <p class="navigation-items__date">Jan 01, 2020 - Robert O'Malley</p>
+        <div class="navigation-content">
+            <img src="assets/img/image-03.png" alt="news stock-image">
+            <p class="navigation-content__title purple">News</p>
+            <p class="navigation-content__desc navigation-content__desc--underline">Orem ipsum dolor sit amet, consectturu
+                adipsicing.</p>
+            <p class="navigation-content__date">Jan 01, 2020 - Robert O'Malley</p>
         </div>
 
-        <div class="navigation-items">
-            <img src="assets/img/image-04.png" alt="">
-            <p class="navigation-items__title blue">Events</p>
-            <p class="navigation-items__desc">Sed cursus bibdendum feugita. In oci sapien</p>
-            <p class="navigation-items__date">Jan 01, 2020 - Robert O'Malley</p>
+        <div class="navigation-content">
+            <img src="assets/img/image-04.png" alt="events stock-image">
+            <p class="navigation-content__title blue">Events</p>
+            <p class="navigation-content__desc">Sed cursus bibdendum feugita. In oci sapien</p>
+            <p class="navigation-content__date">Jan 01, 2020 - Robert O'Malley</p>
         </div>
     </div>
 </section>
 
-<section class="content-wrapper flex-container">
+<section class="content-wrapper d-flex">
     <div>
-        <h3 class="faq-title">Your Questions Answered and then some</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur doloribus magni quisquam quo! Ab</p>
+        <h3 class="faq-heading">Your Questions Answered and then some</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur doloribus magni quisquam quo!
+            Ab</p>
     </div>
 
     <div class="collapsible-container">
         <div class="collapsible-item">
             <button class="collapsible-button">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus <span><img
-                    class="collapse-icon" src="assets/img/open.svg" alt=""></span></button>
+                    class="collapse-icon" src="assets/img/open.svg" alt="open icon"></span></button>
             <div class="collapsible-content">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae, consequatur eaque
-                    earum ex hic <span class="inline-link"><a href="#">inline link</a></span> necessitatibus perferendis quidem, quo similique, sit totam? Adipisci
+                    earum ex hic <span class="inline-link"><a href="#">inline link</a></span> necessitatibus perferendis
+                    quidem, quo similique, sit totam? Adipisci
                     excepturi facilis laboriosam nesciunt possimus quo!
                 </p>
             </div>
@@ -154,7 +159,7 @@
 
         <div class="collapsible-item">
             <button class="collapsible-button">Lorem ipsum dolor sit amet, consectetur adipisicing <span><img
-                    class="collapse-icon" src="assets/img/open.svg" alt=""></span></button>
+                    class="collapse-icon" src="assets/img/open.svg" alt="open icon"></span></button>
             <div class="collapsible-content">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae, consequatur eaque
@@ -168,7 +173,7 @@
 
         <div class="collapsible-item">
             <button class="collapsible-button">Consectetur adipisicing elit. Delectus <span><img
-                    class="collapse-icon" src="assets/img/open.svg" alt=""></span></button>
+                    class="collapse-icon" src="assets/img/open.svg" alt="open icon"></span></button>
             <div class="collapsible-content">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae, consequatur eaque
@@ -182,7 +187,7 @@
 
         <div class="collapsible-item">
             <button class="collapsible-button">Lorem ipsum dolor sit amet, consectetur adipisicing elit <span><img
-                    class="collapse-icon" src="assets/img/open.svg" alt=""></span></button>
+                    class="collapse-icon" src="assets/img/open.svg" alt="open icon"></span></button>
             <div class="collapsible-content">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae, consequatur eaque
@@ -196,35 +201,30 @@
     </div>
 </section>
 
-<section class="content-wrapper">
-    <h2 class="sixth-block-heading">Specialist Sectors</h2>
-    <div class="flex-container slider-component">
+<footer class="content-wrapper">
+    <h2 class="footer-heading">Specialist Sectors</h2>
+    <div class="d-flex slider-component">
         <div>
-            <img src="assets/img/image-05.png" alt="">
+            <img src="assets/img/image-05.png" alt="building stock-image">
             <p>Slider Item 1</p>
         </div>
 
         <div>
-            <img src="assets/img/image-06.png" alt="">
+            <img src="assets/img/image-06.png" alt="builder stock-image">
             <p>Slider Item 2</p>
         </div>
 
         <div>
-            <img src="assets/img/image-07.png" alt="">
+            <img src="assets/img/image-07.png" alt="bed stock-image">
             <p class="orange">Slider Item 3</p>
         </div>
 
         <div>
-            <img src="assets/img/image-08.png" alt="">
+            <img src="assets/img/image-08.png" alt="sky stock-image">
             <p>Slider Item 4</p>
         </div>
-
     </div>
-
-
-
-</section>
-
+</footer>
 
 <script src="index.js"></script>
 </body>
