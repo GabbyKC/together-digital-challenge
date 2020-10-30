@@ -203,6 +203,11 @@ li a {
     align-items: center;
 }
 
+/*safari ui fix*/
+.collapsible-button:active {
+    color: var(--font-colour-dark);
+}
+
 .collapsible-content {
     display: none;
 }
